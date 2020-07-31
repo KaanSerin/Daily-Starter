@@ -1,0 +1,60 @@
+.Navbar {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ddd;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: #555;
+}
+
+.Navbar img {
+  height: 50px;
+}
+
+.Navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Navbar ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.Navbar .searchbox {
+  height: 40px;
+  width: 70%;
+  background-color: white;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar .searchbox img {
+  height: 70%;
+}
+
+.Navbar .searchbox img:hover {
+  cursor: pointer;
+}
+
+.Navbar input {
+  width: 94%;
+  height: 100%;
+  padding: 4px 20px;
+  margin: 0 0;
+  border: none;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.Navbar input:focus {
+  outline: none;
+}
