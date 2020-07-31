@@ -1,0 +1,15 @@
+.Weather {
+  margin: 0 15px;
+  height: 150px;
+  font-size: 0.9rem;
+  padding: 8px;
+  background-color: #fff;
+}
+
+.Weather img {
+  height: 70%;
+}
+
+.Weather p {
+  margin: 0;
+}

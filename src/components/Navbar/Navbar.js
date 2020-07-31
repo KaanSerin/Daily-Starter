@@ -8,7 +8,14 @@ const Navbar = ({ getForecast }) => {
 
   const searchForecast = () => {
     getForecast(search);
+    localStorage.setItem("search", search);
     setSearch("");
+  };
+
+  const onKeyDown = (event) => {
+    if (event.keyCode == 13) {
+      searchForecast();
+    }
   };
 
   return (
@@ -21,6 +28,7 @@ const Navbar = ({ getForecast }) => {
           type="text"
           value={search}
           onChange={(event) => setSearch(event.target.value)}
+          onKeyDown={onKeyDown}
         />
         <img src={searchIcon} onClick={searchForecast} alt="search button" />
       </div>
