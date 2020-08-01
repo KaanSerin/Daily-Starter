@@ -3,13 +3,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import ForecastContextProvider from "./context/ForecastContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ForecastContextProvider>
-      <App />
-    </ForecastContextProvider>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

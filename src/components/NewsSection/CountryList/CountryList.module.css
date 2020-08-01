@@ -1,0 +1,15 @@
+.CountryList {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  margin-top: 20px;
+  background-color: #fff;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.CountryList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
