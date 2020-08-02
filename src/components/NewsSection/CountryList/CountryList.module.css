@@ -1,11 +1,12 @@
 .CountryList {
   display: flex;
   align-items: center;
-  height: 120px;
+  height: 122px;
   margin-top: 20px;
-  background-color: #fff;
+  background-color: rgb(250, 250, 250);
   overflow: auto;
   white-space: nowrap;
+  border: 1px solid rgba(0.9, 0.9, 0.9, 0.1);
 }
 
 .CountryList ul {

@@ -23,7 +23,8 @@ const Navbar = () => {
   return (
     <nav className={classes.Navbar}>
       <a href="/">
-        <img src={logoImg} alt="The Daily Starter Logo" />
+        {/* <img src={logoImg} alt="The Daily Starter Logo" /> */}
+        Daily Starter
       </a>
       <div className={classes.searchbox}>
         <input

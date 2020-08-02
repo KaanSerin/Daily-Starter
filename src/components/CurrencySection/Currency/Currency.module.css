@@ -1,0 +1,7 @@
+.Currency {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 5px;
+  padding: 6px;
+  background-color: #fff;
+}
