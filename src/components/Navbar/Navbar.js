@@ -36,14 +36,6 @@ const Navbar = () => {
         />
         <img src={searchIcon} onClick={searchForecast} alt="search button" />
       </div>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/">About</a>
-        </li>
-      </ul>
     </nav>
   );
 };

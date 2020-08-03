@@ -5,3 +5,12 @@
   padding: 20px 0;
   text-align: center;
 }
+
+.Footer a {
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}

@@ -6,7 +6,11 @@ const Footer = () => {
 
   return (
     <footer className={classes.Footer}>
-      <small>&copy; Copyright {currentYear.getFullYear()}, Kaan Serin</small>
+      <small>
+        &copy; Copyright {currentYear.getFullYear()}, Kaan Serin |{" "}
+        <a href="https://github.com/KaanSerin">Github</a> |{" "}
+        <a href="https://twitter.com/KaanSerin20">Twitter</a>
+      </small>
     </footer>
   );
 };
