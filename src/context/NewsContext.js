@@ -3,6 +3,29 @@ import axios from "axios";
 
 export const NewsContext = createContext();
 
+// Thanks to GNews Api, I have to resort to this
+const countryToLang = countryCode => {
+  const langCodes = {
+    'tr': 'tr',
+    'gb': 'en',
+    'us': 'en',
+    'de': 'de',
+    'fr': 'fr',
+    'gr': 'el',
+    'hu': 'hu',
+    "ie":'en',
+    'il': 'iw',
+    'it': 'it',
+    'es': 'es',
+    'se': 'sv',
+    'jp': 'ja',
+    'ru': 'ru',
+
+  }
+
+  return langCodes[countryCode];
+}
+
 const NewsContextProvider = (props) => {
   const [newsData, setNewsData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -11,7 +34,7 @@ const NewsContextProvider = (props) => {
     setIsLoading(true);
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=d768583776c24e3bacf873faea8b6d8a`
+        `https://gnews.io/api/v3/top-news?lang=${countryToLang(countryCode)}&country=${countryCode}&token=af18c2c2a6cb6504b91f2fccee89ecf2`
       )
       .then((response) => {
         console.log(response.data);
