@@ -12,7 +12,7 @@ const Weather = (props) => {
     setIsIconLoading(true);
     let source = axios.CancelToken.source();
     axios
-      .get(`http://openweathermap.org/img/wn/${props.icon}@2x.png`, {
+      .get(`https://openweathermap.org/img/wn/${props.icon}@2x.png`, {
         responseType: "blob",
         cancelToken: source.token,
       })
