@@ -1,10 +1,11 @@
 # Daily Starter
+
 Daily Starter is a React app where you can look up weekly weather reports from your city / country, read the trending headlines from various countries, and take a look at the various exchange rates.
 
 # Used APIs
 
 <ul>
-<li>News API</li>
+<li>GNews API</li>
 <li>OpenWeather API</li>
 <li>Country Flags API</li>
 <li>MATERIAL UI</li>
