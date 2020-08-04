@@ -11,7 +11,7 @@ const ForecastContextProvider = (props) => {
     setIsLoading(true);
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/forecast?q=${city}&mode=json&units=metric&appid=ea68e365d06e5d2f65aaf446623175b1`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&mode=json&units=metric&appid=ea68e365d06e5d2f65aaf446623175b1`
       )
       .then((response) => {
         axios
